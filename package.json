@@ -1,0 +1,9 @@
+{
+  "name": "benita-makeup-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Benita Make-up Academy Luxury Mobile-First Website",
+  "scripts": {
+    "build": "echo 'Static build complete'"
+  }
+}
