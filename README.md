@@ -47,7 +47,7 @@
 
 1. **Start the local server:**
    ```bash
-   node server.js
+   node scripts/local-server.js
    ```
 
 2. **Open in your browser:**
@@ -57,6 +57,6 @@
 
 3. **Run automated browser verification tests:**
    ```bash
-   node puppeteer_test.js
-   node test_overlap.js
+   node scripts/puppeteer_test.js
+   node scripts/test_overlap.js
    ```
