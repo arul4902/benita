@@ -1409,44 +1409,50 @@
         <p class="enquiry-modal-sub">Direct WhatsApp Dispatch to Bridal Booking Desk</p>
       </div>
       <form class="enquiry-form" id="bridal-enquiry-form">
-        <div class="form-group">
-          <label class="form-label" for="bridal-name">Your Full Name *</label>
-          <input type="text" id="bridal-name" class="form-input" placeholder="e.g. Ananya Reddy" required />
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label class="form-label" for="bridal-name">Your Full Name *</label>
+            <input type="text" id="bridal-name" class="form-input" placeholder="e.g. Ananya Reddy" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bridal-phone">Contact Number *</label>
+            <input type="tel" id="bridal-phone" class="form-input" placeholder="e.g. 9876543210" required />
+          </div>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="bridal-phone">Contact Number *</label>
-          <input type="tel" id="bridal-phone" class="form-input" placeholder="e.g. 9876543210" required />
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label class="form-label" for="bridal-event">Occasion / Event *</label>
+            <select id="bridal-event" class="form-select">
+              <option value="Muhurtham Wedding">Muhurtham Wedding</option>
+              <option value="Christian Wedding">Christian Wedding</option>
+              <option value="Engagement / Ring Ceremony">Engagement / Ring Ceremony</option>
+              <option value="Reception Glam">Reception Glam</option>
+              <option value="Pre-Wedding (Haldi / Mehendi / Sangeet)">Pre-Wedding (Haldi / Mehendi / Sangeet)</option>
+              <option value="Saree Ceremony / Seemantham">Saree Ceremony / Seemantham</option>
+              <option value="Bridesmaids / Family Makeover">Bridesmaids / Family Makeover</option>
+              <option value="Groom Makeup">Groom Makeup</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bridal-date">Event Date *</label>
+            <input type="date" id="bridal-date" class="form-input" required />
+          </div>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="bridal-event">Occasion / Event *</label>
-          <select id="bridal-event" class="form-select">
-            <option value="Muhurtham Wedding">Muhurtham Wedding</option>
-            <option value="Christian Wedding">Christian Wedding</option>
-            <option value="Engagement / Ring Ceremony">Engagement / Ring Ceremony</option>
-            <option value="Reception Glam">Reception Glam</option>
-            <option value="Pre-Wedding (Haldi / Mehendi / Sangeet)">Pre-Wedding (Haldi / Mehendi / Sangeet)</option>
-            <option value="Saree Ceremony / Seemantham">Saree Ceremony / Seemantham</option>
-            <option value="Bridesmaids / Family Makeover">Bridesmaids / Family Makeover</option>
-            <option value="Groom Makeup">Groom Makeup</option>
-          </select>
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label class="form-label" for="bridal-location">Event Venue / Location *</label>
+            <input type="text" id="bridal-location" class="form-input" placeholder="e.g. SR Nagar / Banjara Hills, Hyderabad" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bridal-service-input">Preferred Service Package</label>
+            <input type="text" id="bridal-service-input" class="form-input" value="HD Bridal Signature Makeup" />
+          </div>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="bridal-date">Event Date *</label>
-          <input type="date" id="bridal-date" class="form-input" required />
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="bridal-location">Event Venue / Location (City/Area) *</label>
-          <input type="text" id="bridal-location" class="form-input" placeholder="e.g. SR Nagar / Banjara Hills, Hyderabad" required />
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="bridal-service-input">Preferred Service Package</label>
-          <input type="text" id="bridal-service-input" class="form-input" value="HD Bridal Signature Makeup" />
-        </div>
-        <button type="submit" class="btn btn-wine" style="width: 100%; margin-top: 0.5rem;">
+        <button type="submit" class="btn btn-wine btn-modal-submit">
           Send Enquiry on WhatsApp (8688106490) 💬
         </button>
-        <p style="font-size: 0.75rem; color: #7a726d; text-align: center;">
-          Fallback Academy contact: <a href="https://wa.me/919652050987" target="_blank" style="color: var(--teal-primary); text-decoration: underline;">9652050987</a>
+        <p class="enquiry-modal-footer-note">
+          Fallback Academy contact: <a href="https://wa.me/919652050987" target="_blank">9652050987</a>
         </p>
       </form>
     </div>
@@ -1462,13 +1468,15 @@
         <p class="enquiry-modal-sub">Direct WhatsApp Dispatch to Course Advisor</p>
       </div>
       <form class="enquiry-form" id="academy-enquiry-form">
-        <div class="form-group">
-          <label class="form-label" for="academy-name">Your Full Name *</label>
-          <input type="text" id="academy-name" class="form-input" placeholder="e.g. Sneha Sharma" required />
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="academy-phone">Phone Number *</label>
-          <input type="tel" id="academy-phone" class="form-input" placeholder="e.g. 9876543210" required />
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label class="form-label" for="academy-name">Your Full Name *</label>
+            <input type="text" id="academy-name" class="form-input" placeholder="e.g. Sneha Sharma" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="academy-phone">Phone Number *</label>
+            <input type="tel" id="academy-phone" class="form-input" placeholder="e.g. 9876543210" required />
+          </div>
         </div>
         <div class="form-group">
           <label class="form-label" for="academy-course-input">Course Interested In *</label>
@@ -1479,24 +1487,26 @@
             <option value="Saree Draping & Box Pleating Masterclass">Saree Draping &amp; Box Pleating Masterclass</option>
           </select>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="academy-batch">Preferred Batch Schedule</label>
-          <select id="academy-batch" class="form-select">
-            <option value="Next Upcoming Batch (Ask Availability)">Next Upcoming Batch (Ask Availability)</option>
-            <option value="Morning Session">Morning Session</option>
-            <option value="Afternoon Session">Afternoon Session</option>
-            <option value="Weekend Special">Weekend Special</option>
-          </select>
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label class="form-label" for="academy-batch">Preferred Batch Schedule</label>
+            <select id="academy-batch" class="form-select">
+              <option value="Next Upcoming Batch (Ask Availability)">Next Upcoming Batch (Ask Availability)</option>
+              <option value="Morning Session">Morning Session</option>
+              <option value="Afternoon Session">Afternoon Session</option>
+              <option value="Weekend Special">Weekend Special</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="academy-exp">Your Experience Level</label>
+            <select id="academy-exp" class="form-select">
+              <option value="Complete Beginner (No prior experience)">Complete Beginner (No prior experience)</option>
+              <option value="Intermediate / Practicing Artist">Intermediate / Practicing Artist</option>
+              <option value="Looking to upgrade hairstyling & draping">Looking to upgrade hairstyling &amp; draping</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="academy-exp">Your Experience Level</label>
-          <select id="academy-exp" class="form-select">
-            <option value="Complete Beginner (No prior experience)">Complete Beginner (No prior experience)</option>
-            <option value="Intermediate / Practicing Artist">Intermediate / Practicing Artist</option>
-            <option value="Looking to upgrade hairstyling & draping">Looking to upgrade hairstyling &amp; draping</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+        <button type="submit" class="btn btn-primary btn-modal-submit">
           Send Academy Enquiry on WhatsApp (9652050987) 💬
         </button>
       </form>
