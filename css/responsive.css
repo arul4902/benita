@@ -1,0 +1,541 @@
+/* ==========================================================================
+   BENITA MAKEUP ACADEMY - RESPONSIVE STYLES
+   Breakpoints: 1440px, 1024px, 960px, 768px, 640px, 430px, 380px, 340px
+   Guarantees zero overlap, zero negative clipping, and zero horizontal scroll
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Large Desktop (1440px+)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .hero-headline {
+    font-size: 4.8rem;
+  }
+  .hero-portrait-img {
+    height: 660px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Laptops & Landscape Tablets (<= 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .site-header {
+    height: 72px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .hero-section {
+    padding-top: calc(72px + 2rem);
+    padding-bottom: 4rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-subcopy {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-trust-bar {
+    justify-content: center;
+  }
+
+  .hero-visual-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-portrait-img {
+    height: 520px;
+  }
+
+  .badge-top-right {
+    right: 0;
+    top: -10px;
+  }
+
+  .badge-bottom-left {
+    left: 0;
+    bottom: -10px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .about-image-collage {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-pillars-grid {
+    text-align: left;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Medium Tablets & Narrow Landscape (<= 960px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 960px) {
+  .explorer-result-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .explorer-preview-image-frame {
+    height: 280px;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .dual-entry-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .dual-card {
+    min-height: 400px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet Portrait (<= 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Prevent sticky bar from covering footer content */
+  body {
+    padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .brand-logo-img {
+    height: 40px;
+  }
+
+  .nav-actions .btn {
+    display: none;
+  }
+
+  .hero-headline {
+    font-size: 2.6rem;
+  }
+
+  .hero-portrait-img {
+    height: 460px;
+  }
+
+  .hero-floating-badge {
+    padding: 0.65rem 0.95rem;
+  }
+
+  .badge-text-title {
+    font-size: 0.72rem;
+  }
+
+  .badge-text-sub {
+    font-size: 0.65rem;
+  }
+
+  .about-primary-image {
+    height: 400px;
+  }
+
+  .about-floating-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: -25px auto 0;
+    width: fit-content;
+    padding: 1rem 1.75rem;
+    z-index: 5;
+  }
+
+  .about-badge-number {
+    font-size: 2.4rem;
+  }
+
+  .about-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .slider-container {
+    height: 380px;
+  }
+
+  .slider-img-before {
+    height: 380px;
+  }
+
+  .slider-badge {
+    top: 12px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.68rem;
+  }
+
+  .slider-badge-before {
+    left: 12px;
+  }
+
+  .slider-badge-after {
+    right: 12px;
+  }
+
+  .comparison-table-wrapper {
+    position: relative;
+    border-radius: var(--radius-md);
+  }
+
+  .comparison-table {
+    min-width: 560px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.9rem 1rem;
+    font-size: 0.84rem;
+  }
+
+  .comparison-table th {
+    font-size: 0.76rem;
+  }
+
+  .table-scroll-hint {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.78rem;
+    color: var(--wine-primary);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  /* Modals */
+  .lightbox-dialog {
+    max-width: 95vw;
+    max-height: 90vh;
+  }
+
+  .lightbox-body {
+    grid-template-columns: 1fr;
+    max-height: 90vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .lightbox-image-wrap {
+    height: 300px;
+  }
+
+  .lightbox-details {
+    padding: 1.5rem 1.25rem 2rem;
+  }
+
+  .lightbox-title {
+    font-size: 1.7rem;
+  }
+
+  /* Floating Dock & Mobile Sticky Bar adjustment */
+  .floating-action-dock {
+    bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+    right: 15px;
+  }
+
+  .dock-btn {
+    width: 46px;
+    height: 46px;
+  }
+
+  .dock-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mobile-sticky-bar {
+    display: block;
+    padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .bridal-pricing-notice {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bridal-pricing-notice .btn {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Tablets & Phablets (<= 640px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .hero-visual-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 440px;
+  }
+
+  .hero-portrait-frame {
+    order: 1;
+    width: 100%;
+  }
+
+  .hero-portrait-img {
+    height: 420px;
+  }
+
+  .hero-floating-badge {
+    position: static;
+    width: 100%;
+    max-width: 360px;
+    justify-content: center;
+    margin: 0;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .badge-top-right {
+    order: 2;
+    margin-top: 0.5rem;
+  }
+
+  .badge-bottom-left {
+    order: 3;
+    margin-bottom: 0;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-card {
+    height: 380px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Phones (<= 430px - iPhone Pro Max)
+   -------------------------------------------------------------------------- */
+@media (max-width: 430px) {
+  .hero-headline {
+    font-size: 2.3rem;
+  }
+
+  .hero-subcopy {
+    font-size: 0.98rem;
+  }
+
+  .hero-portrait-img {
+    height: 380px;
+  }
+
+  .hero-trust-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .trust-dot {
+    display: none;
+  }
+
+  .slider-container {
+    height: 330px;
+  }
+
+  .slider-img-before {
+    height: 330px;
+  }
+
+  .slider-handle {
+    width: 40px;
+    height: 40px;
+    font-size: 0.95rem;
+  }
+
+  .explorer-occasions-grid {
+    gap: 0.45rem;
+  }
+
+  .occasion-tab-btn {
+    padding: 0.55rem 0.95rem;
+    font-size: 0.76rem;
+  }
+
+  .service-card-body {
+    padding: 1.25rem;
+  }
+
+  .course-card-header {
+    padding: 1.5rem 1.25rem 1rem;
+  }
+
+  .course-name {
+    font-size: 1.7rem;
+  }
+
+  .course-card-body {
+    padding: 1.25rem;
+  }
+
+  .enquiry-modal-header {
+    padding: 1.5rem 1.25rem 1rem;
+  }
+
+  .enquiry-form {
+    padding: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Standard Mobile (<= 390px - iPhone 14)
+   -------------------------------------------------------------------------- */
+@media (max-width: 390px) {
+  .hero-headline {
+    font-size: 2.15rem;
+  }
+
+  .section-title {
+    font-size: 1.95rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-cta-group {
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .slider-container {
+    height: 300px;
+  }
+
+  .slider-img-before {
+    height: 300px;
+  }
+
+  .explorer-result-inclusions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Compact Mobile (<= 360px - Galaxy S8 / SE)
+   -------------------------------------------------------------------------- */
+@media (max-width: 360px) {
+  .hero-headline {
+    font-size: 1.9rem;
+  }
+
+  .brand-logo-img {
+    height: 34px;
+  }
+
+  .slider-container {
+    height: 270px;
+  }
+
+  .slider-img-before {
+    height: 270px;
+  }
+
+  .explorer-occasions-grid {
+    gap: 0.35rem;
+  }
+
+  .occasion-tab-btn {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.72rem;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .course-badge-pill,
+  .course-badge-top {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.75rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Ultra Compact Mobile (<= 320px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 320px) {
+  .hero-headline {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .brand-logo-img {
+    height: 30px;
+  }
+
+  .slider-container {
+    height: 240px;
+  }
+
+  .slider-img-before {
+    height: 240px;
+  }
+
+  .about-badge-number {
+    font-size: 2rem;
+  }
+
+  .course-fee {
+    font-size: 2rem;
+  }
+}

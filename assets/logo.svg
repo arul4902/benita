@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C78A"/>
+      <stop offset="50%" stop-color="#C8A66A"/>
+      <stop offset="100%" stop-color="#9E7A3E"/>
+    </linearGradient>
+    <linearGradient id="wineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8E2A62"/>
+      <stop offset="100%" stop-color="#521536"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Crest / Monogram -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Shield / Diamond -->
+    <path d="M50,0 L95,45 L50,90 L5,45 Z" fill="none" stroke="url(#goldGrad)" stroke-width="1.8" />
+    <path d="M50,7 L88,45 L50,83 L12,45 Z" fill="#063F42" opacity="0.95" />
+    <path d="M50,14 L81,45 L50,76 L19,45 Z" fill="none" stroke="url(#goldGrad)" stroke-width="0.8" stroke-dasharray="2,2"/>
+    
+    <!-- Stylized 'B' monogram -->
+    <text x="50" y="58" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="44" font-weight="600" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="1">B</text>
+    
+    <!-- Delicate sparkle / star -->
+    <circle cx="50" cy="18" r="2.2" fill="#E5C78A" />
+    <circle cx="50" cy="72" r="2.2" fill="#E5C78A" />
+  </g>
+
+  <!-- Typography Block -->
+  <!-- Brand Name -->
+  <text x="125" y="48" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="34" font-weight="700" letter-spacing="4.5" fill="#FAF6ED">BENITA</text>
+  
+  <!-- Secondary line -->
+  <text x="126" y="74" font-family="'Montserrat', 'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="600" letter-spacing="5" fill="url(#goldGrad)">MAKE-UP ACADEMY</text>
+  
+  <!-- Divider line with diamond -->
+  <line x1="126" y1="84" x2="430" y2="84" stroke="url(#goldGrad)" stroke-width="0.75" opacity="0.6"/>
+  <polygon points="278,81 281,84 278,87 275,84" fill="#C8A66A" />
+
+  <!-- Positioning Subtitle -->
+  <text x="126" y="99" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" letter-spacing="2.5" fill="#D9B7B1">BRIDAL ARTISTRY • 18+ YRS CINEMA • HYDERABAD</text>
+</svg>
